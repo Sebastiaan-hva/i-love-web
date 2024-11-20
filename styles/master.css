@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'PixelFont-Regular';
+    src: url("../assets/PixelFont-Regular.otf") format('opentype');
+}
+ 
+
+body {
+    font-family: 'PixelFont-Regular', sans-serif;
+}
