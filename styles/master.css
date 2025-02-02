@@ -6,6 +6,7 @@
     font-family: "Noto Sans", serif;
 }
 
+h1{
 @font-face {
     font-family: 'PixelFont-Regular';
     src: url("../assets/PixelFont-Regular.otf") format('opentype');
