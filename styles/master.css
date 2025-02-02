@@ -5,6 +5,7 @@
     /* list-style-type: circle; */
     font-family: "Noto Sans", serif;
 }
+
 @font-face {
     font-family: 'PixelFont-Regular';
     src: url("../assets/PixelFont-Regular.otf") format('opentype');
