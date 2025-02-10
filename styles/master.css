@@ -1,11 +1,18 @@
 *{
     text-decoration: none;
     margin:0;
-    list-style-type: '\1F49C';
+    list-style-type: "\1F49C";
     /* list-style-type: circle; */
     font-family: "Noto Sans", serif;
 }
 
+body{
+    background-color:var(--color1);
+}
+
+nav{
+    height:5em;
+}
 h1{
     font-size: clamp(5rem, 30vw, 8rem); 
     text-align: left;
@@ -18,7 +25,26 @@ h1{
     margin-left:25%;
     color:red;
     a{
-        color:rebeccapurple;
+        color:var(--color3);
+
     }
 }
 
+@supports( color:light-dark(rgb(255, 255, 255),rgb(120, 120, 120)) ) {
+    :root {
+        color-scheme:light dark;
+
+
+        --color1:light-dark(Pink,rgb(149, 93, 205));
+        --color2:light-dark(Gold,Maroon);
+        --color3:light-dark(#790000,#fff);
+        /* --hearts:light-dark(\1F49C,\1F44D) */
+        &:has( [value="light"]:checked ) {
+			color-scheme:light;
+		}
+
+        &:has( [value="dark"]:checked ) {
+			color-scheme:dark;
+		}
+    }
+}
