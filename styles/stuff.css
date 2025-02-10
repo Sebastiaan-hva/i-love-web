@@ -3,6 +3,10 @@
     src: url("../assets/BionicalDemo-8MJ5A.ttf") format('opentype');
 }
 
+body{
+    font-family: "BionicalDemo", sans-serif;
+}
+
 ul{
     display:flex;
 }
@@ -11,13 +15,13 @@ li{
     list-style-type: none;
     display:flex;
     flex-direction: column;
-    font-family: "BionicalDemo", sans-serif;
+    
 }
 
 p{
 
 }
 
-img{
-    max-width: 480%;
+ul li img{
+    max-width: 100%;
 }
