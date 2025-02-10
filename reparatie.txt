@@ -1,0 +1,13 @@
+1.1.3 - Benoemt belangen van eindgebruikers, valideert door middel van testen en verwerkt testresultaten (WCAG testen doen)
+
+1.2.1 - Werkt samen en laat zich hierbij begeleiden.	(bewijslast tonen voor groepsproject)
+
+1.2.2 - Draagt verantwoording voor eigen resultaten, geeft feedback binnen de squad en verwerkt ontvangen feedback. (Reageren op feedback en er iets mee doen)
+
+1.3.1 - Luistert naar wat een ander zegt en neemt dit serieus. (Doet iets met feedback op Code/portflow of bijv de assesments)
+
+1.3.3 - Documenteert volgens aangeboden richtlijnen en houdt voortgang bij. (richtlijnen - readme verder, nog iets?.)
+
+1.4.2 - Schetst om gedachten en processen te verkennen. (Schets ook gebruiken om design problemen op te lossen.)
+
+
