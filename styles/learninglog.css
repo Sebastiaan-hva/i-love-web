@@ -2,6 +2,20 @@ body{
     color:white;
 }
 
+h1{
+   
+    font-size:2.5em;
+}
+
+nav{
+    display:flex;
+    justify-content:space-around;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
 
 @font-face {
     font-family: 'PixelFont-Regular';
