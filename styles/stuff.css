@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'BionicalDemo';
+    src: url("../assets/BionicalDemo-8MJ5A.ttf") format('opentype');
+}
+
+ul{
+    display:flex;
+}
+
+li{
+    list-style-type: none;
+    display:flex;
+    flex-direction: column;
+    font-family: "BionicalDemo", sans-serif;
+}
+
+p{
+
+}
+
+img{
+    max-width: 480%;
+}
