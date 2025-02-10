@@ -47,7 +47,7 @@ a{
 .learning-grid{
     display:grid;
     grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap:1em;
     margin:1em;
 }
@@ -67,4 +67,11 @@ h3{
 .article-log{
     background-color:rgb(0, 0, 0);
     padding:7%;
+}
+
+@media( min-width: 800px) {
+    .learning-grid{
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
 }
