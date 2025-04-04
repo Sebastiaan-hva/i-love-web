@@ -66,3 +66,22 @@ a {
 		}
     }
 }
+
+
+.test-gradient{
+    /* background: rgb(14,93,215); */
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    background-clip: text;
+    color:transparent;
+}
+
+.play-button{
+    padding:30px;
+    border-radius:50%;
+    margin:10%;
+    background-color:purple;
+}
+
+.pause-button{
+    
+}
