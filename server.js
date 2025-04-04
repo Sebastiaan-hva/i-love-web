@@ -3,6 +3,11 @@ import express from 'express'
 
 import { Liquid } from 'liquidjs';
 
+import { readdir, readFile } from 'node:fs/promises'
+
+const files = await readdir('content')
+// console.log(files)
+
 const app = express()
 
 app.use(express.static('public'))
@@ -19,8 +24,15 @@ app.get('/', async function (request, response) {
 })
 
 app.get('/learningjournal', async function (request, response) {
-    response.render('learningjournal.liquid')
+    response.render('learningjournal.liquid', {files: files})
 })
+
+app.get('/learningjournal/:slug', async function(req, res) {
+    console.log(req.params.slug)
+    const fileContents = await readFile('content/' + req.params.slug, { encoding: 'utf8' })
+    res.render('artikel.liquid')
+  })
+
 
 app.get('/stuff', async function (request, response) {
     response.render('stuff.liquid')
@@ -29,6 +41,8 @@ app.get('/stuff', async function (request, response) {
 app.get('/digitalgarden', async function (request, response) {
     response.render('digitalgarden.liquid')
 })
+
+
 
 // app.post('/', async function (request, response) {
 //   response.redirect(303, '/')

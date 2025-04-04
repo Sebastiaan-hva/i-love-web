@@ -5,6 +5,9 @@ body{
     animation: gradient 3s ease infinite;
 }
 
+.file{
+    color:white;
+}
 
 @keyframes gradient {
     0% {

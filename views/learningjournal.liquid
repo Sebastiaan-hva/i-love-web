@@ -1,16 +1,23 @@
 
-
-
 {% render 'partials/head2.liquid', title: 'learninglog' %}
-
 
     <nav>
         <h1> <a href="#semester 1">Semester 1</a> </h1> <h1> <a href="#semester 2">Semester 2</a></h1>
     </nav>  
+
+    
 <main class="learning-grid">
 
 
 <article class="article-log" id="semester 1">
+
+<section>
+    {% for file in files %}
+        <a class="file" href="/learningjournal/{{ file }}">{{ file|slice:0,-3 }}</a>
+    {% endfor %}
+</section>
+
+{{ files | json }}
 
 <h2>Sprint 1 Week 1</h2>
 
