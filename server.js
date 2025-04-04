@@ -1,22 +1,34 @@
 
 import express from 'express'
 
-// import { Liquid } from 'liquidjs';
+import { Liquid } from 'liquidjs';
 
 const app = express()
 
 app.use(express.static('public'))
 
-// const engine = new Liquid();
-// app.engine('liquid', engine.express()); 
+const engine = new Liquid();
+app.engine('liquid', engine.express()); 
 
-// app.set('views', './views')
+app.set('views', './views')
 
 app.use(express.urlencoded({extended: true}))
 
-// app.get('/', async function (request, response) {
-//    response.render('index.liquid', {person: personResponseJSON.data})
-// })
+app.get('/', async function (request, response) {
+   response.render('home.liquid')
+})
+
+app.get('/learningjournal', async function (request, response) {
+    response.render('learningjournal.liquid')
+})
+
+app.get('/stuff', async function (request, response) {
+    response.render('stuff.liquid')
+})
+
+app.get('/digitalgarden', async function (request, response) {
+    response.render('digitalgarden.liquid')
+})
 
 // app.post('/', async function (request, response) {
 //   response.redirect(303, '/')

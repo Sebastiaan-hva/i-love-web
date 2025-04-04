@@ -1,0 +1,29 @@
+
+
+{% render 'partials/head.liquid', title: 'home' %}
+
+{% comment %} {% render 'partials/nav.liquid' %} {% endcomment %}
+
+    <nav>
+        <form>
+            <label>
+                <input type="radio" name="color-theme" value="auto" checked> auto
+            </label>
+            <label>
+                <input type="radio" name="color-theme" value="light"> licht
+            </label>
+            <label>
+                <input type="radio" name="color-theme" value="dark"> donker
+            </label>
+        </form>
+    </nav>
+
+    <h1> I &#128149; web</h1>
+
+    <ul class="list-pages">
+        <li><a href="./digitalgarden">Digital Garden</a></li>
+        <li><a href="./learningjournal">Learning Journal</a></li>
+        <li><a href="/stuff">Things I Like</a></li>
+    </ul>
+
+{% render 'partials/foot.liquid' %}
