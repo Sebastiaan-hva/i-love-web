@@ -30,7 +30,7 @@ app.get('/learningjournal', async function (request, response) {
 app.get('/learningjournal/:slug', async function(req, res) {
     console.log(req.params.slug)
     const fileContents = await readFile('content/' + req.params.slug, { encoding: 'utf8' })
-    res.render('artikel.liquid')
+    res.render('artikel.liquid', {fileContents: fileContents })
   })
 
 
