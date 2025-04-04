@@ -1,29 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="styles/master.css"> -->
-    <link rel="stylesheet" href="styles/stuff.css">
-    <title>Document</title>
-</head>
-
-<body>
+{% render 'partials/head.liquid', title: 'stuff' %}
 
     <ul>
         <li> 
         <p>Games I like</p>
-        <img src="./assets/3x3.jpg">
+        <img src="/assets/images/3x3.jpg">
         </li>
 
         <li>
         <p>Manga I like</p>
-        <img src="./assets/4x4.jpg">
+        <img src="/assets/images/4x4.jpg">
         </li>
 
         <li>
         <p>Anime I like</p>
-        <img src="./assets/5x5.jpg">
+        <img src="/assets/images/5x5.jpg">
         </li>
     </ul>
 
@@ -33,20 +23,19 @@
     <ul>
         <li>
             <p>Lift</p>
-            <img src="./assets/KNKF.png">
+            <img src="/assets/images/KNKF.png">
         </li>
 
         <li>
             <p>Race</p>
-            <img src="./assets/logo-kartcircuit-driebergen.png">
+            <img src="./assets/images/logo-kartcircuit-driebergen.png">
         </li>
 
         <li>
             <p>watch movies</p>
-            <img src="./assets/pathe.jpg">
+            <img src="/assets/images/pathe.jpg">
         </li>
     </ul>
 
 
-</body>
-</html>
+    {% render 'partials/foot.liquid' %}
