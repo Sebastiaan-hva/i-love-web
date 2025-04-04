@@ -5,6 +5,8 @@ import { Liquid } from 'liquidjs';
 
 import { readdir, readFile } from 'node:fs/promises'
 
+import { marked } from 'marked'
+
 const files = await readdir('content')
 // console.log(files)
 
@@ -30,7 +32,8 @@ app.get('/learningjournal', async function (request, response) {
 app.get('/learningjournal/:slug', async function(req, res) {
     console.log(req.params.slug)
     const fileContents = await readFile('content/' + req.params.slug, { encoding: 'utf8' })
-    res.render('artikel.liquid', {fileContents: fileContents })
+    const markedUpFileContents = marked.parse(fileContents)
+    res.render('artikel.liquid', {fileContents: markedUpFileContents })
   })
 
 
