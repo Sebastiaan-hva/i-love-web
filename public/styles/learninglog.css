@@ -1,8 +1,8 @@
 body{
     color:white;
-    background: linear-gradient(-45deg, #ffffff, #555151, #ffffff, #6c5e5e);
+    background: linear-gradient(-90deg, #ffffff, #9e9b9b, #ffffff, #8f8f8f);
     background-size: 400% 400%;
-    animation: gradient 3s ease infinite;
+    animation: gradient 5s ease infinite;
 }
 
 .file{
@@ -21,9 +21,38 @@ body{
     }
 }
 
+.markdown-section{
+    
+    color:black;
+}
+
+.markdown-list {
+    margin-left:10%;
+    margin-right:10%;
+    max-width:80%;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    a{
+        color:black;
+        font-size:2rem;
+        padding:1em;
+        background-color: #b1a5a5;
+        background: linear-gradient(-90deg, #383838, #9e9b9b, #d3d3d3, #4b4b4b);
+        background-size: 400% 400%;
+        animation: gradient 8s ease infinite;
+    }
+    a:hover{
+        color:white;
+        background-color: black;
+    }
+}
+
 h1{
-   
+    max-width: 80%;
+   text-align: center;
     font-size:2.5em;
+    margin-bottom:1em;
 }
 
 nav{
@@ -65,7 +94,9 @@ h3{
 }
 
 .article-log{
-    background-color:rgb(0, 0, 0);
+    background: linear-gradient(-60deg, #202020, #000000, #202020, #4e4e4e);
+    background-size: 400% 400%;
+    animation: gradient 8s ease infinite;
     padding:7%;
 }
 

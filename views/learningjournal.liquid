@@ -1,6 +1,19 @@
 
 {% render 'partials/head2.liquid', title: 'learninglog' %}
 
+
+<section class="markdown">
+    <h1>link naar markdowns</h1>
+    <ul class="markdown-list">
+    {% for file in files %}
+    <a class="file" href="/learningjournal/{{ file }}">{{ file|slice:0,-3 }}</a>
+    {% endfor %}
+    </ul>
+</section>
+
+
+
+
     <nav>
         <h1> <a href="#semester 1">Semester 1</a> </h1> <h1> <a href="#semester 2">Semester 2</a></h1>
     </nav>  
@@ -271,18 +284,14 @@
                     <p> https://github.com/Sebastiaan-hva/the-web-is-for-everyone-interactive-functionality/blob/39c109b4dbf7a2d0bb4c59c430772b26e32a605e/server.js#L75-L107 hier heb ik een post gemaakt.</p>
             </article>
 
-            <section>
-                <h1>link naar markdowns</h1>
-                {% for file in files %}
-                <a class="file" href="/learningjournal/{{ file }}">{{ file|slice:0,-3 }}</a>
-                {% endfor %}
-            </section>
+          
 
             {% comment %} {{ files | json }} {% endcomment %}
 
 
     </article>
-    <a href="./index.html">Back to home</a>
+
+    <a href="/">Back to home</a>
 
 
 </main>
