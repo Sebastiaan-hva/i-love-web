@@ -3,6 +3,10 @@ body{
     background: linear-gradient(-90deg, #ffffff, #9e9b9b, #ffffff, #8f8f8f);
     background-size: 400% 400%;
     animation: gradient 5s ease infinite;
+    @media (width > 1000px) {
+        display:grid;
+        
+    }
 }
 
 .file{
