@@ -18,7 +18,16 @@ ul li{
 
 @font-face {
     font-family: 'BionicalDemo';
-    src: url("../assets/BionicalDemo-8MJ5A.ttf") format('opentype');
+    src: url("/assets/fonts/BionicalDemo-8MJ5A.ttf");
+}
+
+body{
+    font-family: "BionicalDemo", sans-serif;
+}
+
+label{
+    font-family: "BionicalDemo", sans-serif;
+    text-transform:capitalize;
 }
 
 
@@ -98,7 +107,9 @@ ul{
     ul{
         display:flex;
         flex-direction: row;
-
+        li a{
+            /* font-size:20cqi; */
+        }
     }
 }
 
@@ -110,10 +121,10 @@ header{
 
 
 h1{
-    margin-top:.6em;
-    font-size: clamp(2rem, 25vw, 9rem); 
+    margin-top:.1em;
+    font-size: clamp(2rem, 15vw, 6rem); 
     text-align: left;
-    margin-left:10%;
+    /* margin-left:1%; */
     font-family: "BionicalDemo", sans-serif;
     
 }
@@ -129,7 +140,7 @@ header:hover{
     }
     15% {
         letter-spacing:1.1rem;
-        transform:translateX(12vw);
+        transform:translateX(8vw);
         font-weight: 900;
     }
     90%{
@@ -145,8 +156,8 @@ header:hover{
 
 .list-pages{
     
-    font-size: clamp(1.5rem, 12vw, 5rem);
-    margin-top:1.5em;
+    font-size: clamp(1.2rem, 9vw, 3rem);
+    margin-top:.2em;
     margin-left:25%;
     @media (width < 600px) {
         margin-left:0%;
@@ -155,6 +166,7 @@ header:hover{
         color:var(--color3);
         box-shadow: inset 0 0 0 0 #000000;
         transition: color .4s ease-in-out, box-shadow .3s ease-in-out;
+        font-family: "BionicalDemo", sans-serif;
     }
     a:hover {
         box-shadow: inset 10em 0 0 0 var(--color3);

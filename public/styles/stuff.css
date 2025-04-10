@@ -1,27 +1,93 @@
 @font-face {
     font-family: 'BionicalDemo';
-    src: url("../assets/BionicalDemo-8MJ5A.ttf") format('opentype');
+    src: url("/assets/fonts/BionicalDemo-8MJ5A.ttf");
 }
 
 body{
     font-family: "BionicalDemo", sans-serif;
+    background: rgb(45,45,45);
+background: linear-gradient(292deg, rgba(45,45,45,1) 0%, rgb(188, 188, 184) 93%, rgba(201,201,201,1) 100%);
 }
 
 ul{
     display:flex;
+    max-width: 90%;
 }
 
 li{
     list-style-type: none;
     display:flex;
     flex-direction: column;
+    container-name:image;
+    
     
 }
 
-p{
-
+@media (width < 700px) {
+    ul{
+    flex-direction:column;
+    li{
+        container-type:inline-size;
+    }
+    }
 }
+
 
 ul li img{
     max-width: 100%;
 }
+
+@container image (width < 400px){
+    li img{
+        max-width:80%;
+        
+    }
+    li{
+       
+    }
+    li p{
+        font-size:clamp(2.5cqi, 5cqi, 8cqi);
+    }
+}
+
+
+@property --bg-angle {
+    inherits: false;
+    initial-value: 0deg;
+    syntax: "<angle>";
+  }
+  
+  @keyframes spin {
+    to {
+      --bg-angle: 360deg;
+    }
+  }
+  
+  li img{
+    animation: spin 2.5s infinite linear paused;
+    /* crazy animated border on hover met @property */
+    
+    background:
+      linear-gradient(
+          to bottom,
+          oklch(0.1 0.2 240 / 0.95),
+          oklch(0.1 0.2 240 / 0.95)
+        )
+        padding-box, 
+      conic-gradient(
+          from var(--bg-angle) in oklch longer hue,
+          oklch(0.85 0.37 0) 0 0
+        )
+        border-box; 
+    
+    border: 6px solid transparent;
+  
+    &:hover {
+      animation-play-state: running;
+    }
+  }
+  
+
+  ul li img {
+    box-shadow: 0.125rem 0.25rem 0.25rem 0.5rem oklch(0.1 0.37 315 / 0.25);
+  }
