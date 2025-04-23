@@ -6,7 +6,7 @@
 body{
     font-family: "BionicalDemo", sans-serif;
     background: rgb(45,45,45);
-background: linear-gradient(292deg, rgba(45,45,45,1) 0%, rgb(188, 188, 184) 93%, rgba(201,201,201,1) 100%);
+    background: linear-gradient(292deg, rgba(45,45,45,1) 0%, rgb(188, 188, 184) 93%, rgba(201,201,201,1) 100%);
 }
 
 ul{
@@ -39,11 +39,7 @@ ul li img{
 
 @container image (width < 400px){
     li img{
-        max-width:80%;
-        
-    }
-    li{
-       
+        max-width:80%;   
     }
     li p{
         font-size:clamp(2.5cqi, 5cqi, 8cqi);
@@ -91,3 +87,4 @@ ul li img{
   ul li img {
     box-shadow: 0.125rem 0.25rem 0.25rem 0.5rem oklch(0.1 0.37 315 / 0.25);
   }
+  

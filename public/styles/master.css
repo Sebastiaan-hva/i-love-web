@@ -169,7 +169,7 @@ header:hover{
         font-family: "BionicalDemo", sans-serif;
     }
     a:hover {
-        box-shadow: inset 10em 0 0 0 var(--color3);
+        box-shadow: inset 20em 0 0 0 var(--color3);
         color: var(--color1);
     }
 }
