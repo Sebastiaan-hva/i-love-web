@@ -15,4 +15,20 @@ Met components kan je page.svelte(s) verder onderverdelen in stukjes herbruikbaa
 
 Kies een van de principes: file-based routing, load functions, runes (reactivity hack) of forms en actions. Leg uit hoe je het gekozen principe kunt toepassen in een web project.
 
-Load function kun je gebruiken om server side data te fetchen. 
+Load function kun je gebruiken om server side data te fetchen.
+
+
+Leervragen 17-9:
+
+Hoe verschilde jouw conventies met die van de FDND Agency?
+
+Wij maakte nog branches op de main ipv van een developer branch.
+
+
+Welke conventies zou je willen toevoegen aan die van de FDND Agency? Schiet ook een issue in s.v.p.
+-Fallback voor container queries want caniuse geeft <90% usability voor die feature.
+
+Wat waren de belangrijkste punten uit de kampvuursessie?
+-Taken opdelen in kleinere tasks.
+-Meer vragen om feedback
+-Meer documenteren.
