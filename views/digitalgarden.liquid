@@ -1,6 +1,6 @@
 {% render 'partials/head4.liquid', title: 'digitalgarden' %}
 
-<img src="https://picsum.photos/1500" loading='eager' height="500">
+{% comment %} <img src="https://picsum.photos/1500" loading='eager' height="500">
 
 <button>BUY</button>
 
@@ -10,6 +10,46 @@
 
 <img src="https://picsum.photos/501" loading='lazy' height="500">
 
-<img src="https://picsum.photos/502" loading='lazy' height="500">
+<img src="https://picsum.photos/502" loading='lazy' height="500"> {% endcomment %}
+
+<p>LightGoldenRodYellow</p>
+
+<p>LightGoldenRodYellow</p>
+
+<p>LightGoldenRodYellow</p>
+
+<button>LightGoldenRodYellow</button>
+
+{% comment %} hier later meer color types testen https://css-tricks.com/new-css-color-features-preview/ {% endcomment %}
+
+<style>
+    body{
+        background-color: brown;
+    }
+    p:nth-of-type(1){
+        color:LightGoldenRodYellow;
+    
+    }
+    p:nth-of-type(2){
+        color:#FAFAD2;
+    }
+    p:nth-of-type(3){
+        color:rgb(250, 250, 210);
+    }
+    button{
+        --h:100; --s:50%; --l:50%; --a:1 ;
+        background-color:hsl(var(--h) var(--s) var(--l) / var(--a) );
+        color:lightgoldenrodyellow;
+        padding:1em;
+        
+    }
+    button:hover{
+        --h:80;
+        --s:60%;
+        --l:60%;
+        --a:0.8;
+    }
+</style>
+
 
 {% render 'partials/foot.liquid' %}
