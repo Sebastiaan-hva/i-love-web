@@ -33,3 +33,13 @@ Hierin wordt de basis gelegd, zoals:
 Het opstellen van de initiële Product Backlog.
 Het bepalen van de projectvisie.
 Het inrichten van de technische omgeving.
+
+leervraag week 2 vrijdag:
+
+Wat betekenen de Good Design principes 4, 8 en 10 in je eigen woorden?
+4: Dat iedereen kan begrijpen wat je site is wat het doet waar het voor staat. 
+8: Nadenken over de samenhang van je pagina en dat alle details van gelijke componenten overeen komen. zoals width van dingen of rounding van corners.
+10: Zorgen dat je belangrijkste content goed gepresenteerd wordt. En de onnodige informatie zoveel weg halen.
+
+Hoe hebben ze geholpen je ontwerp beter te maken?
+kan je naar specifieke punten letten van een design ipv globaal kijken.
