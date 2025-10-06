@@ -43,3 +43,21 @@ Wat betekenen de Good Design principes 4, 8 en 10 in je eigen woorden?
 
 Hoe hebben ze geholpen je ontwerp beter te maken?
 kan je naar specifieke punten letten van een design ipv globaal kijken.
+
+leervragen week 3 maandag:
+
+Welke stappen neem je om een project in SvelteKit op te starten?
+directory openen in vscode 
+npx sv create my-app
+cd my-app
+npm run dev
+
+Hoe kan je AI gebruiken om principes en best-practices van een framework te ontdekken?
+door effectief te prompten
+
+Welke SvelteKit principes en best-practices heb je geleerd te gebruiken?
+veel die we al wisten maar de nieuwe waren:
+bindables.
+hooks.
+.env (envirenmental).
+<slot>s.
