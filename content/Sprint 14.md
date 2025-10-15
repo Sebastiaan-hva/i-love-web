@@ -61,3 +61,16 @@ bindables.
 hooks.
 .env (envirenmental).
 <slot>s.
+
+leervragen week 3 woensdag:
+
+Hoe heb jij je voorbereid op de sprint review?
+- Agenda/planning gemaakt voor wat we allemaal gaan vertellen.
+- gekeken wat we gaan presenteren en wat we erover aan hun kunnen vragen.
+- Alle vragen voorbereidt (zijn er heel veel)
+
+[Voor na de sprint review] Hoe heeft de sprint review voorbereiding geholpen?
+donderdag ochtend invullen
+
+Wat zou je de volgende keer anders doen?
+elke sprint review is anders lastig te zeggen.
